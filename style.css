@@ -7,6 +7,11 @@ header {
   height: 360px;
   z-index: 10;
 }
+.fixed-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
 .header-banner {
   background-color: #333;
   background-image: url('https://artlords-artwork.s3.amazonaws.com/uploads/image/6069/display_dune_tribute.jpg');
@@ -36,16 +41,15 @@ nav#navigation ul {
   list-style: none;
   float: left;
   margin: 0px;
-  padding: 0px 10px;
+  padding: 0px 0px 0px;
   text-align: left;
   max-width: 100%;
   position: absolute;
-  box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
 }
 
-nav#navigation ul li {
+nav#navigation ul >li {
   font-size: 14px;
-  display: inline-block;
+  float: left;
   line-height: 60px;
   margin-left: 10px;
   padding: 0px 0px;
@@ -53,36 +57,45 @@ nav#navigation ul li {
 
 nav#navigation ul li:hover a {
   color: #fff;
-  background: #990000;
+  background: #2c323a;
 }
+
 
 
 nav#navigation ul li a {
   display: block;
   height: 60px;
   text-decoration: none;
+  width: 100%;
   color: #a8b3bd;
-  padding: 0px 20px;
+  padding: 0px 0px 0px 10px;
   transition:color 0.2s linear, background 0.2s linear;
 }
 nav#navigation ul ul{
   display: none;
   background: #292f36;
+  width: 300px;
+}
+nav#navigation ul ul li{
+float: none;
 }
 
-nav#navigation ul li:hover > ul {
-  display: inline-block;
+nav#navigation ul >li:hover > ul {
+  display: block;
 }
-nav#navigation ul li:hover > ul li {
+nav#navigation ul >li:hover > ul li {
   background: #292f36;
 }
-nav#navigation ul li:hover > ul li a {
+nav#navigation ul >li:hover > ul li a {
   color: #fff;
   background: #292f36;
 }
-nav#navigation ul li:hover > ul li:hover a {
+nav#navigation ul >li:hover > ul li a {
+  color: #a8b3bd;
+}
+nav#navigation ul >li:hover > ul li:hover a {
   color: #fff;
-  background: #990000;
+  background: #2c323a;
 }
 
 footer {
