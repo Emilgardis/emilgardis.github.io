@@ -1,4 +1,4 @@
-  body {
+body {
     margin: 0 0 20px;
     padding: 0px;
   }
@@ -30,31 +30,59 @@ nav#navigation {
   width: 100%;
   height: 60px;
   background: #292f36;
-  z-index: 10;
 }
 
 nav#navigation ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
+  list-style: none;
+  float: left;
+  margin: 0px;
+  padding: 0px 10px;
   text-align: left;
-  width: auto;
   max-width: 100%;
+  position: absolute;
+  box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
 }
 
 nav#navigation ul li {
+  font-size: 14px;
   display: inline-block;
   line-height: 60px;
   margin-left: 10px;
-  padding: 0;
+  padding: 0px 0px;
 }
 
-nav#navigation ul li a {
-  display: inline-block;
-  text-decoration: none;
-  color: #a9abae;
+nav#navigation ul li:hover a {
+  color: #fff;
+  background: #990000;
+}
 
+
+nav#navigation ul li a {
+  display: block;
+  height: 60px;
+  text-decoration: none;
+  color: #a8b3bd;
+  padding: 0px 20px;
   transition:color 0.2s linear, background 0.2s linear;
+}
+nav#navigation ul ul{
+  display: none;
+  background: #292f36;
+}
+
+nav#navigation ul li:hover > ul {
+  display: inline-block;
+}
+nav#navigation ul li:hover > ul li {
+  background: #292f36;
+}
+nav#navigation ul li:hover > ul li a {
+  color: #fff;
+  background: #292f36;
+}
+nav#navigation ul li:hover > ul li:hover a {
+  color: #fff;
+  background: #990000;
 }
 
 footer {
