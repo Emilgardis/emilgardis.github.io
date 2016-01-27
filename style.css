@@ -38,12 +38,12 @@ nav#navigation ul {
   margin: 0;
   padding-left: 0;
   text-align: left;
-  width: 960px;
+  width: auto;
   max-width: 100%;
 }
 
 nav#navigation ul li {
-  display: inline;
+  display: inline-block;
   line-height: 60px;
   margin-left: 10px;
   padding: 0;
@@ -55,44 +55,6 @@ nav#navigation ul li a {
   color: #a9abae;
 
   transition:color 0.2s linear, background 0.2s linear;
-}
-nav#navigation ul li a:hover {
-  background: #4d5865;
-}
-nav#navigation ul li a.first{
-  border-left: 0 none;
-}
-nav#navigation ul li a.last{
-  border-right: 0 none;
-}
-nav#navigation li:hover > a {
-  background: #fff;
-}
-
-nav#navigation li:hover > ul{
-  visibility: visible;
-  opacity:1;
-}
-
-nav#navigation ul li ul {
-  top: 300;
-  left: 100;
-}
-nav#navigation ul ul,nav#navigation ul li ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-    visibility:hidden;
-
-    opacity:0;
-
-    position: absolute;
-    width: auto;
-    z-index: 99999;
-
-    background:#f8f8f8;
--webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
-    transition:opacity 0.2s linear, visibility 0.2s linear; 
 }
 
 footer {
