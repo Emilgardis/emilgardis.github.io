@@ -140,7 +140,7 @@ main{
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height: 20px;
     background: #f0f0f0;
