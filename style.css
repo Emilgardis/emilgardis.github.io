@@ -134,7 +134,7 @@ nav#side-navigation ul > li a {
   transition:color 0.2s linear, background 0.2s linear;
 }
 
-div.content {
+main{
     margin: 100px ;
     width: 300px;
 }
