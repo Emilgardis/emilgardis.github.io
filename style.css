@@ -134,6 +134,10 @@ nav#side-navigation ul > li a {
   transition:color 0.2s linear, background 0.2s linear;
 }
 
+div.content {
+    margin: 10px ;
+}
+
 footer {
     position: absolute;
     bottom: 0;
