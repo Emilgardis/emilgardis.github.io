@@ -136,6 +136,7 @@ nav#side-navigation ul > li a {
 
 div.content {
     margin: 100px ;
+    width: 300px;
 }
 
 footer {
