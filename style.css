@@ -32,24 +32,22 @@ header .logo {
   width: 256px;
 }
 nav#header-navigation {
-  width: 100%;
+  display: flex;
+  justify-content: flex-start;
   height: 60px;
   background: #242e30;
+  z-index: 11;
 }
 
 nav#header-navigation ul {
+  z-index: 12;
   list-style: none;
-  float: left;
-  margin: 0px;
-  padding: 0px 0px 0px;
-  text-align: left;
-  max-width: 100%;
+  display: flex;
   position: relative;
 }
 
 nav#header-navigation ul >li {
   font-size: 16px;
-  float: left;
   line-height: 60px;
   margin-left: 10px;
   padding: 0px 0px;
@@ -86,16 +84,9 @@ margin: 0px;
 nav#header-navigation ul >li:hover > ul {
   display: block;
 }
-nav#header-navigation ul >li:hover > ul li {
 
-  background: #292f36;
-}
 nav#header-navigation ul >li:hover > ul li a {
-  color: #fff;
   background: #292f36;
-
-}
-nav#header-navigation ul >li:hover > ul li a {
   color: #a8b3bd;
 }
 nav#header-navigation ul >li:hover > ul li:hover a {
@@ -137,6 +128,35 @@ nav#side-navigation ul > li a {
 main{
     margin: 30px 20px 0px 100px;
     width: 80%;
+}
+
+
+div.post h1 {
+  font-size: 22px;
+  display: inline;
+}
+div.author:before {
+  content: "Author: ";
+}
+
+div.authordate:before {
+  content: "Time made: ";
+}
+div.authordate {
+  font-size: 14px;
+  display: inline;
+}
+div.author {
+  display: inline;
+  font-size: 14px;
+}
+.body {
+  position: relative; 
+}
+
+.body:before, .body:after {
+   content: "";
+   position: absolute;
 }
 
 footer {
