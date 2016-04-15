@@ -1,162 +1,174 @@
 body {
     margin: 0 0 20px;
     padding: 0px;
-  }
-  
+}
+
 header {
-  height: 360px;
-  z-index: 10;
+    height: 360px;
+    z-index: 10;
 }
+
 .fixed-header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
+
 .header-banner {
-  background-color: #333;
-  background-image: url('https://artlords-artwork.s3.amazonaws.com/uploads/image/6069/display_dune_tribute.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
+    background-color: #333;
+    background-image: url('https://artlords-artwork.s3.amazonaws.com/uploads/image/6069/display_dune_tribute.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
 }
+
 header .logo {
-  background-color: transparent;
-  background-image: url('');
-  background-position: center top;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 72px;
-  height: 256px;
-  width: 256px;
-}
-nav#header-navigation {
-  display: flex;
-  justify-content: flex-start;
-  height: 60px;
-  background: #242e30;
-  z-index: 11;
+    background-color: transparent;
+    background-image: url('');
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 72px;
+    height: 256px;
+    width: 256px;
 }
 
-nav#header-navigation ul {
-  z-index: 12;
-  list-style: none;
-  display: flex;
-  position: relative;
+#header-navigation {
+    display: flex;
+    justify-content: flex-start;
+    height: 60px;
+    background: #242e30;
+    z-index: 11;
 }
 
-nav#header-navigation ul >li {
-  font-size: 16px;
-  line-height: 60px;
-  margin-left: 10px;
-  padding: 0px 0px;
+#header-navigation ul {
+    z-index: 12;
+    list-style: none;
+    display: flex;
+    position: relative;
 }
 
-
-nav#header-navigation ul li:hover a {
-  color: #fff;
-  background: #2c323a;
+#header-navigation ul >li {
+    font-size: 16px;
+    line-height: 60px;
+    margin-left: 10px;
+    padding: 0px 0px;
 }
 
-
-
-nav#header-navigation ul li a {
-  display: flex;
-  height: 60px;
-  text-decoration: none;
-  width: 100%;
-  color: #a8b3bd;
-  padding: 0px 0px 0px 10px;
-  transition:color 0.2s linear, background 0.2s linear;
-}
-nav#header-navigation ul ul{
-  display: none;
-  background: #242e30;
-  width: 100%;
-  position: absolute;
-}
-nav#header-navigation ul ul li{
-float: none;
-margin: 0px;
+#header-navigation ul li:hover a {
+    color: #fff;
+    background: #2c323a;
 }
 
-nav#header-navigation ul >li:hover > ul {
-  display: block;
+#header-navigation ul li a {
+    display: flex;
+    height: 60px;
+    text-decoration: none;
+    width: 100%;
+    color: #a8b3bd;
+    padding: 0px 0px 0px 10px;
+    transition: color 0.2s linear, background 0.2s linear;
 }
 
-nav#header-navigation ul >li:hover > ul li a {
-  background: #292f36;
-  color: #a8b3bd;
-}
-nav#header-navigation ul >li:hover > ul li:hover a {
-  color: #fff;
-  background: #2c323a;
+#header-navigation ul ul {
+    display: none;
+    background: #242e30;
+    width: 100%;
+    position: absolute;
 }
 
-
-nav#side-navigation ul {
-  float: right;
-  width: 100px;
-  list-style: none;
-  background-color: #242e30;
-  padding: 0px 0px 0px;
-  text-align: left;
-  max-width: 100%;
-  padding: 0px 10px;
-  position: relative;
-}
-nav#side-navigation ul > li {
-  font-size: 16px;
-  display: block;
-  line-height: 60px;
-  margin-left: 0px;
-  padding: 0px 0px;
-  
+#header-navigation ul ul li {
+    float: none;
+    margin: 0px;
 }
 
-nav#side-navigation ul > li a {
-  display: flex;
-  height: 60px;
-  text-decoration: none;
-  width: 100%;
-  color: #a8b3bd;
-  padding: 0px 0px 0px 0px;
-  transition:color 0.2s linear, background 0.2s linear;
+#header-navigation ul >li:hover > ul {
+    display: block;
 }
 
-main{
+#header-navigation ul >li:hover > ul li a {
+    background: #292f36;
+    color: #a8b3bd;
+}
+
+#header-navigation ul >li:hover > ul li:hover a {
+    color: #fff;
+    background: #2c323a;
+}
+
+#side-navigation.side ul {
+    z-index: 10;
+    float: right;
+    width: 100px;
+    list-style: none;
+    background-color: #242e30;
+    padding: 0px 0px 0px;
+    text-align: left;
+    max-width: 100%;
+    padding: 0px 10px;
+    position: relative;
+}
+
+#side-navigation.head ul {
+    display: none;
+}
+
+#side-navigation ul > li {
+    font-size: 16px;
+    display: block;
+    line-height: 60px;
+    margin-left: 0px;
+    padding: 0px 0px;
+}
+
+#side-navigation ul > li a {
+    display: flex;
+    height: 60px;
+    text-decoration: none;
+    width: 100%;
+    color: #a8b3bd;
+    padding: 0px 0px 0px 0px;
+    
+}
+
+main {
     margin: 30px 20px 0px 100px;
     width: 80%;
 }
 
-
 div.post h1 {
-  font-size: 22px;
-  display: inline;
+    font-size: 22px;
+    display: inline;
 }
+
 div.author:before {
-  content: "Author: ";
+    content: "Author: ";
 }
 
 div.authordate:before {
-  content: "Time made: ";
-}
-div.authordate {
-  font-size: 14px;
-  display: inline;
-}
-div.author {
-  display: inline;
-  font-size: 14px;
-}
-.body {
-  position: relative; 
+    content: "Time made: ";
 }
 
-.body:before, .body:after {
-   content: "";
-   position: absolute;
+div.authordate {
+    font-size: 14px;
+    display: inline;
+}
+
+div.author {
+    display: inline;
+    font-size: 14px;
+}
+
+.body {
+    position: relative;
+}
+
+.body:before,
+.body:after {
+    content: "";
+    position: absolute;
 }
 
 footer {
@@ -168,5 +180,23 @@ footer {
 }
 
 small {
-  font-size: smaller;
+    font-size: smaller;
+}
+
+@media screen and (max-width: 1022px) {
+    #side-navigation.side {
+        display: none;
+    }
+
+    #side-navigation.head {
+        display: !important block;
+    }
+
+    #side-navigation.side ul#nav-headside:before {
+        content: "Hello";
+    }
+
+    #side-navigation.side ul:hover {
+        display: block;
+    }
 }

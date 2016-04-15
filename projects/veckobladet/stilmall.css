@@ -1,0 +1,13 @@
+/*Stilmall för veckobladet, av Emil Gardström (FS14B) på Forsmarksskola*/
+body {
+  background: lightcyan;
+  
+}
+nav {
+  display: flex;
+  background: lightgrey;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
